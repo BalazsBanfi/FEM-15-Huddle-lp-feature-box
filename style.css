@@ -14,7 +14,7 @@
 }
 
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -73,12 +73,12 @@ header img {
 }
 
 header button {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 3rem;
   background-color: white;
   color: black;
   font-weight: 700;
   border-radius: 40px;
-  box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 5px 15px 5px rgba(221, 221, 221, 0.9);
 }
 
 /* Huddle content */
@@ -181,7 +181,7 @@ footer::before {
   float: left;
 }
 
-.footerItems > p:nth-child(2)::before {
+.footerItems:nth-child(1) > p:nth-child(2)::before {
   content: url("./images/icon-phone.svg");
   width: 50px;
   display: block;
@@ -213,7 +213,9 @@ a:active {
 /**************
 ***Fa brands***
 **************/
-button, a, .fa-brands {
+button,
+a,
+.fa-brands {
   transition-duration: 0.3s;
 }
 
@@ -245,4 +247,22 @@ button:hover {
 ************************/
 
 @media screen and (min-width: 800px) {
+  .huddle {
+    width: 100%;
+    padding: 3rem 4rem;
+    background: url("./images/bg-hero-desktop.svg") center no-repeat
+      var(--gBlueOp);
+    background-size: cover;
+  }
+  .content {
+    display: grid;
+    grid-template: repeat(4, min-content) / 3fr 4fr;
+    justify-items: center;
+    
+  }
+  .content > img {
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+  }
+
 }
