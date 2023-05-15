@@ -254,15 +254,35 @@ button:hover {
       var(--gBlueOp);
     background-size: cover;
   }
+  .content > * {
+    margin: 0;
+  }
   .content {
     display: grid;
     grid-template: repeat(4, min-content) / 3fr 4fr;
+    column-gap: 3rem;
     justify-items: center;
+    align-content: center;
     
   }
+.content > h1 {
+  text-align: left;
+  justify-self: first baseline;
+  align-self: last baseline;
+}
+
+.content > p {
+  text-align: left;
+}
+
+.content > button {
+  align-self: first baseline;
+  justify-self: first baseline;
+}
   .content > img {
     grid-row: 1 / 4;
     grid-column: 2 / 3;
   }
+
 
 }
