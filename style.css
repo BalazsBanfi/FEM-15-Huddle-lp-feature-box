@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 /*****************
 ***Body section***
 ******************/
@@ -57,7 +62,6 @@ header {
 }
 
 header img {
-  display: block;
   height: 1.75rem;
 }
 
@@ -93,14 +97,26 @@ header button {
   box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.content img {
-  display: block;
-  width: 100%;
+/******************
+***Cards section***
+******************/
+
+.cards {
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 4rem;
 }
 
-/********************
-***Used GB section***
-********************/
+.cards h2 {
+  margin-bottom: 2rem;
+}
 
 /***********
 ***Slider***
