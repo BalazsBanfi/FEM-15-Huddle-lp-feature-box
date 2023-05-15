@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+
 :root {
-  --violet: hsl(257, 40%, 49%);
-  --softMagenta: hsl(300, 69%, 71%);
+  --pink: hsl(322, 100%, 66%);
+
+  --vPaleCyan: hsl(193, 100%, 96%);
+  --vdCyan: hsl(192, 100%, 9%);
+  --gBlue: hsl(208, 11%, 55%);
 }
 
 * {
+  /* border: 1px solid red; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,155 +20,52 @@
 ******************/
 
 body {
-  width: clamp(375px, 96vw, 1440px);
-  padding: 2.25rem;
-  background: url("./images/bg-mobile.svg") no-repeat, var(--violet);
-  background-size: contain;
   text-align: center;
+  background-color: var(--vdBlue);
+  font-size: 14px;
   font-family: "Open Sans", sans-serif;
-}
-
-header {
-  text-align: left;
-}
-
-header img {
-  height: 31px;
+  /* font-family: "Poppins", sans-serif; */
+  display: grid;
+  place-items: center;
 }
 
 main {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-}
-
-/******************
-***Image section***
-******************/
-.img {
-  margin: 0 auto;
-  max-width: 400px;
-}
-
-.img > img {
-  max-width: 100%;
-}
-
-/*****************
-***Text section***
-*****************/
-
-.textSection {
-  margin-top: 3.5rem;
-  color: white;
-}
-
-.textSection h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.textSection p {
-  margin-top: 1rem;
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-button {
-  width: 13rem;
-  margin-top: 1.5rem;
-  padding: 0.8rem;
-  background-color: white;
-  border-radius: 30px;
-  color: var(--violet);
-  box-shadow: 1px 2px 3px 3px hsl(257, 40%, 45%);
-  transition-duration: 0.3s;
-}
-
-button:hover {
-  color: white;
-  background-color: var(--softMagenta);
-  cursor: pointer;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: white;
 }
 
 /*******************
-***Footer section***
+***Huddle section***
 *******************/
 
-.fa {
-  margin-top: 3rem;
+.huddle {
+  width: 100%;
+  background: url('./images/bg-mobile.svg') no-repeat;
 }
 
-.fa-brands {
-  width: 30px;
-  height: 30px;
-  font-size: 0.8rem;
-  color: white;
-  margin: 4px;
-  padding: 9px;
-  border: 1px solid white;
-  border-radius: 50%;
-  transition-duration: 0.3s;
+img {
+    
+
 }
 
-.fa-brands:hover {
-  color: var(--softMagenta);
-  border: 1px solid var(--softMagenta);
-  cursor: pointer;
-}
+/********************
+***Used GB section***
+********************/
+
+
+/***********
+***Slider***
+***********/
+
+
+/********************
+***GB Left section***
+********************/
 
 /************************
 ***Media query section***
 ************************/
 
-@media screen and (min-width: 1125px) {
-  body {
-    background: url("./images/bg-desktop.svg") no-repeat, var(--violet);
-    padding: 3.5rem 3.5rem 3.5rem 4.5rem;
-  }
-  header img {
-    height: 55px;
-  }
-  main {
-    flex-direction: row;
-    padding-top: 1.5rem;
-  }
-  .img {
-    flex-basis: 57%;
-    max-width: 50vw;
-  }
-  .textSection {
-    padding-left: 2.5rem;
-    flex-basis: 43%;
-  }
-  .textSection h1 {
-    font-size: 2.3rem;
-    text-align: left;
-  }
-
-  .textSection p {
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    text-align: left;
-  }
-
-  button {
-    width: 13rem;
-    margin-top: 1.5rem;
-    padding: 1.25rem;
-    font-size: 1.1rem;
-    border-radius: 40px;
-    float: left;
-  }
-  .fa {
-    margin-top: 0;
-    float: right;
-  }
-
-  .fa-brands {
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
-  }
+@media screen and (min-width: 800px) {
 }
