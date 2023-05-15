@@ -133,9 +133,9 @@ header button {
 }
 .cards:nth-child(5) {
   background-color: white;
-  width: 50%;
+  width: 55%;
   position: absolute;
-  transform: translate(50%, -75%);
+  transform: translate(35%, -45%);
 }
 
 .cards button {
@@ -155,7 +155,15 @@ header button {
 
 footer {
   width: 100%;
-  padding: 8rem 4rem 4rem;
+  padding: 10rem 4rem 8rem;
+  background-color: black;
+  color: white;
+  text-align: left;
+  display: block;
+}
+
+.footer {
+  width: 100%;
   background-color: black;
   color: white;
   text-align: left;
@@ -163,11 +171,10 @@ footer {
   flex-direction: column;
 }
 
-footer::before {
+.footer0 {
   content: url("./images/logo.svg");
   filter: brightness(0) invert(1);
   text-align: left;
-  margin-bottom: 2rem;
 }
 
 .footerItems * {
@@ -195,6 +202,13 @@ footer::before {
   float: left;
 }
 
+.copyR {
+  color: white;
+  position: fixed;
+  bottom: 4rem;
+  right: 7rem;
+}
+
 /***************
 ***Anchor tag***
 ***************/
@@ -217,16 +231,20 @@ button,
 a,
 .fa-brands {
   transition-duration: 0.3s;
+}
+
+button {
   border: none;
 }
 
 .fa-brands {
+  border: 1px solid white;
   border-radius: 30px;
   color: #fff;
   display: inline-block;
   height: 30px;
   line-height: 30px;
-  margin: auto 3px;
+  margin: auto 13px;
   width: 30px;
   font-size: 15px;
   text-align: center;
@@ -236,6 +254,12 @@ a,
   color: var(--pink);
   border: 1px solid var(--pink);
   cursor: pointer;
+}
+
+.fabrand {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 button:hover {
@@ -251,6 +275,7 @@ button:hover {
   .huddle {
     width: 100%;
     padding: 3rem 4rem;
+    margin-bottom: 3rem;
     background: url("./images/bg-hero-desktop.svg") center no-repeat
       var(--gBlueOp);
     background-size: cover;
@@ -288,24 +313,41 @@ button:hover {
   }
 
   .cards {
-  margin: 2rem 4rem;
-  padding: 2rem;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
-}
+    margin: 2rem 4rem;
+    padding: 2rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
 
-.cards:nth-child(3) {
-  flex-direction: row;
-}
+  .cards:nth-child(3) {
+    flex-direction: row;
+  }
 
-.cards > img {
-  width: 35vw;
-}
+  .cards:nth-child(5) {
+    flex-direction: column;
+  }
 
-.cards > div {
-  padding: 4rem 2rem 4rem 5rem;
-}
+  .cards > img {
+    width: 28vw;
+  }
 
+  .cards > div {
+    padding: 4rem 2rem 4rem 5rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+    padding-left: 7rem;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+
+  .footerItems {
+    padding-right: 2rem;
+    width: 25%;
+  }
 }
