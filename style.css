@@ -1,3 +1,7 @@
+/*****************
+***Root section***
+******************/
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
 
 :root {
@@ -16,29 +20,30 @@
   box-sizing: border-box;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-/*****************
-***Body section***
-******************/
-
-body {
-  text-align: center;
-  background-color: white;
+html {
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   /* font-family: "Poppins", sans-serif; */
+  color: black;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  text-align: center;
+  background-color: white;
   display: grid;
   place-items: center;
 }
 
 main {
-  min-width: 100vw;
-  min-height: 100vh;
-  background: white;
+  width: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /*******************
@@ -142,12 +147,16 @@ header button {
 }
 
 /***********
-***Slider***
+***Footer***
 ***********/
 
-/********************
-***GB Left section***
-********************/
+footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
 
 /************************
 ***Media query section***
